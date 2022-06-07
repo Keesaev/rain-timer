@@ -1,0 +1,21 @@
+name: mingw-build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: burningdaylight/docker-mingw-qt5
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: cmake-build
+      run: >
+        mkdir build &&
+        cd build &&
+        x86_64-w64-mingw32-cmake -DCMAKE_BUILD_TYPE=Release .. &&
+        make -j5
