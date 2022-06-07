@@ -1,4 +1,0 @@
-/home/user/mingwdocker/bind/rain-timer/winbuild/CMakeFiles/rebuild_cache.dir
-/home/user/mingwdocker/bind/rain-timer/winbuild/CMakeFiles/edit_cache.dir
-/home/user/mingwdocker/bind/rain-timer/winbuild/CMakeFiles/rain-timer.dir
-/home/user/mingwdocker/bind/rain-timer/winbuild/CMakeFiles/rain-timer_autogen.dir

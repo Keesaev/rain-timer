@@ -1,3 +1,0 @@
-/usr/bin/cmake -E rm -f CMakeFiles/rain-timer.dir/objects.a
-/usr/sbin/x86_64-w64-mingw32-ar cr CMakeFiles/rain-timer.dir/objects.a @CMakeFiles/rain-timer.dir/objects1.rsp
-/usr/sbin/x86_64-w64-mingw32-g++ -D_FORTIFY_SOURCE=2  -D_FORTIFY_SOURCE=2 -O2 -pipe -fno-plt -fexceptions --param=ssp-buffer-size=4 -O3 -DNDEBUG -Wl,-O1,--sort-common,--as-needed -fstack-protector -Wl,--whole-archive CMakeFiles/rain-timer.dir/objects.a -Wl,--no-whole-archive -o rain-timer.exe -Wl,--out-implib,librain-timer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/rain-timer.dir/linklibs.rsp
