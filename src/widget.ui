@@ -6,195 +6,112 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>593</width>
-    <height>400</height>
+    <width>370</width>
+    <height>279</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Настройка сигнализации</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_7">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_6">
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <property name="leftMargin">
-          <number>20</number>
-         </property>
-         <property name="topMargin">
-          <number>20</number>
-         </property>
-         <property name="rightMargin">
-          <number>20</number>
-         </property>
-         <property name="bottomMargin">
-          <number>20</number>
-         </property>
-         <item>
-          <widget class="QLabel" name="label">
-           <property name="text">
-            <string>Настройка таймера</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QTimeEdit" name="timeEdit">
-           <property name="displayFormat">
-            <string>hh:mm</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <property name="leftMargin">
-          <number>20</number>
-         </property>
-         <property name="topMargin">
-          <number>20</number>
-         </property>
-         <property name="rightMargin">
-          <number>20</number>
-         </property>
-         <property name="bottomMargin">
-          <number>20</number>
-         </property>
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>Громкость сигнализации</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QSlider" name="soundSlider">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
-       <property name="leftMargin">
-        <number>20</number>
-       </property>
-       <property name="topMargin">
-        <number>20</number>
-       </property>
-       <property name="rightMargin">
-        <number>20</number>
-       </property>
-       <property name="bottomMargin">
-        <number>20</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>Помощь и дополнительная информация</string>
-         </property>
-         <property name="wordWrap">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTextEdit" name="textEdit"/>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_4">
-       <property name="leftMargin">
-        <number>20</number>
-       </property>
-       <property name="topMargin">
-        <number>20</number>
-       </property>
-       <property name="rightMargin">
-        <number>20</number>
-       </property>
-       <property name="bottomMargin">
-        <number>20</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>Настройка насоса</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioOn">
-         <property name="text">
-          <string>Вкл</string>
-         </property>
-         <property name="checked">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioOff">
-         <property name="text">
-          <string>Выкл</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <property name="leftMargin">
-        <number>20</number>
-       </property>
-       <property name="topMargin">
-        <number>20</number>
-       </property>
-       <property name="rightMargin">
-        <number>20</number>
-       </property>
-       <property name="bottomMargin">
-        <number>20</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>Яркость светодиода</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSlider" name="brightnessSlider">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <widget class="QPushButton" name="pbSave">
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>30</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>200</width>
-       <height>16777215</height>
+       <width>16777215</width>
+       <height>30</height>
       </size>
      </property>
      <property name="text">
-      <string>Сохранить</string>
+      <string>Будильник</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTimeEdit" name="timeEdit">
+       <property name="displayFormat">
+        <string>hh:mm:ss</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbSave">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pbSound">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Настройка звуковой сигнализации</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pbLight">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Настройка световой сигнализации</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pbWater">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Настройка водной сигнализации</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnStop">
+     <property name="text">
+      <string>Остановить</string>
      </property>
     </widget>
    </item>

@@ -14,14 +14,11 @@ void PortHandler::onReadyRead() {
   qDebug() << "Read: " << m_readData.data();
 }
 
-void PortHandler::onWrite(QString msg) {
-  QByteArray data;
-  data += msg;
-
+void PortHandler::write(QByteArray &data) {
   qDebug() << "Writing " << data.data() << " to port " << m_port.portName();
 
   const qint64 bytesWritten = m_port.write(data);
-  if (bytesWritten == 1) {
+  if (bytesWritten == -1) {
     qDebug() << "Write to " << m_port.portName() << " error: "
              << ": " << m_port.error() << " " << m_port.errorString();
   } else if (bytesWritten != data.size()) {
@@ -29,10 +26,12 @@ void PortHandler::onWrite(QString msg) {
              << " error: "
              << ": " << m_port.error() << " " << m_port.errorString();
   } else {
+    qDebug() << "Wrote " << bytesWritten << "bytes";
     m_port.flush();
   }
 }
 
 void PortHandler::onError(QSerialPort::SerialPortError err) {
-  qDebug() << "Error: " << m_port.errorString();
+  if (m_port.error() != QSerialPort::NoError)
+    qDebug() << "Error: " << m_port.errorString();
 }

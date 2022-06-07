@@ -2,10 +2,16 @@
 #define WIDGET_H
 
 #include <QSerialPort>
+#include <QTimer>
 #include <QWidget>
+#include <memory>
 #include <string>
 
+#include "connect_widget.h"
 #include "port_handler.h"
+#include "wg_light.h"
+#include "wg_sound.h"
+#include "wg_water.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,10 +30,14 @@ class Widget : public QWidget {
   Ui::Widget *ui;
   QSerialPort m_port;
   PortHandler *m_handler;
+  QTimer m_timer;
+  ConnectWidget m_connectWidget;
 
- signals:
-  void writeToPort(QString msg);
+  std::unique_ptr<WgWater> m_wgWater;
+  std::unique_ptr<WgLight> m_wgLight;
+  std::unique_ptr<WgSound> m_wgSound;
+
  private slots:
-  void onSave();
+  void onTimeout();
 };
 #endif  // WIDGET_H

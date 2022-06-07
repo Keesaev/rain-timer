@@ -12,6 +12,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 REQUIRED COMPONENTS Widgets SerialPort)
+#find_package(SQLite3)
 
 file(GLOB SOURCES
         src/*.cpp
@@ -24,5 +25,10 @@ add_executable(rain-timer
     ${SOURCES}
 )
 
-target_link_libraries(rain-timer PRIVATE Qt5::Widgets Qt5::SerialPort)
+
+#include_directories(${SQLite3_INCLUDE_DIRS})
+
+target_link_libraries(rain-timer PRIVATE Qt5::Widgets Qt5::SerialPort
+    #${SQLite3_LIBRARIES}
+    )
 

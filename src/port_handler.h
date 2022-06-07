@@ -10,7 +10,7 @@ class PortHandler : public QObject {
 
  public slots:
   void onReadyRead();
-  void onWrite(QString msg);
+  void write(QByteArray &data);
   void onError(QSerialPort::SerialPortError err);
 
  private:
